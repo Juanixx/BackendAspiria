@@ -1,5 +1,10 @@
+using Contratos.Interfaces.Controllers;
+using Contratos.Interfaces.Repositorios;
+using Negocios.Controllers;
+using Negocios.NegociosRepositorios;
 using System.Web.Http;
 using Unity;
+using Unity.Lifetime;
 using Unity.WebApi;
 
 namespace EjercicioAspiriaBack
@@ -9,12 +14,11 @@ namespace EjercicioAspiriaBack
         public static void RegisterComponents()
         {
 			var container = new UnityContainer();
-            
-            // register all your components with the container here
-            // it is NOT necessary to register your controllers
-            
-            // e.g. container.RegisterType<ITestService, TestService>();
-            
+
+            container.RegisterType<IProductosNegocios, ProductosNegocios>();
+
+            container.RegisterType<IProductosRepositorio, ProductosRepositorio>(new HierarchicalLifetimeManager());
+
             GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);
         }
     }

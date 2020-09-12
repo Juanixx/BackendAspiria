@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database\ApplicationDbContext.cs" />
+    <Compile Include="Database\GenericRepository.cs" />
     <Compile Include="Migrations\202009111826052_Initial.cs" />
     <Compile Include="Migrations\202009111826052_Initial.designer.cs">
       <DependentUpon>202009111826052_Initial.cs</DependentUpon>

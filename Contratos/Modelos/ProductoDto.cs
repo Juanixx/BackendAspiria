@@ -2,9 +2,8 @@
 
 namespace Contratos.Modelos
 {
-    public class Producto
+    public class ProductoDto
     {
-        [Required]
         public int Id { get; set; }
         [Required]
         [StringLength(50)]
@@ -20,17 +19,17 @@ namespace Contratos.Modelos
         [Range(0, 1000)]
         public decimal Precio { get; set; }
 
-        public ProductoDto ToDto()
+        public Producto ToProducto()
         {
-            return new ProductoDto()
+            return new Producto()
             {
                 Id = this.Id,
-                Compania = this.Compania,
-                Descripcion = this.Descripcion,
+                RestriccionEdad = this.RestriccionEdad,
+                Precio = this.Precio,
                 Nombre = this.Nombre,
-                Precio = this.Precio, 
-                RestriccionEdad = this.RestriccionEdad
+                Compania = this.Compania,
+                Descripcion = this.Descripcion
             };
-    }
+        }
     }
 }

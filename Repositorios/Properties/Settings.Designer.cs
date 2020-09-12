@@ -23,15 +23,12 @@ namespace Repositorios.Properties {
             }
         }
         
-        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.\\SQLExpress;Initial Catalog=PruebaAspiria;Integrated Security=True")]
         public string AspiriaConnection {
             get {
                 return ((string)(this["AspiriaConnection"]));
-            }
-            set {
-                this["AspiriaConnection"] = value;
             }
         }
     }
