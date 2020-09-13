@@ -3,9 +3,11 @@ using Contratos.Modelos;
 using Negocios.Help;
 using System.Threading.Tasks;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace EjercicioAspiriaBack.Controllers
 {
+    [EnableCors(origins: "http://localhost:4200", headers: "Content-Type", methods: "GET, POST, PUT, DELETE, OPTIONS")]
     [RoutePrefix("api/v1/aspiria/products")]
     public class ProductosController : ApiController
     {
