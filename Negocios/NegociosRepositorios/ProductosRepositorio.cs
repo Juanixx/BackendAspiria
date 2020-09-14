@@ -1,6 +1,6 @@
 ﻿using Contratos.Interfaces.Repositorios;
 using Contratos.Modelos;
-using Repositorios.Database;
+using Repository.Database;
 
 namespace Negocios.NegociosRepositorios
 {

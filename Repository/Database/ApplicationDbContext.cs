@@ -1,10 +1,9 @@
 ﻿using Contratos.Modelos;
-using Repositorios.Connections;
+using Repository.Connections;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
-using System.Web.Configuration;
 
-namespace Repositorios.Database
+namespace Repository.Database
 {
     public class ApplicationDbContext : DbContext
     {

@@ -59,18 +59,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Contratos\Contratos.csproj">
-      <Project>{5efeeab9-bd75-4698-86dd-d85199f40941}</Project>
-      <Name>Contratos</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Repositorios\Repositorios.csproj">
-      <Project>{eee546b3-e7e7-48f4-8d23-7a417d7e7770}</Project>
-      <Name>Repositorios</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Contratos\Contratos.csproj">
+      <Project>{5EFEEAB9-BD75-4698-86DD-D85199F40941}</Project>
+      <Name>Contratos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Repository\Repository.csproj">
+      <Project>{c90f90c5-1c31-415f-a18b-f3c5b3bc42c1}</Project>
+      <Name>Repository</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

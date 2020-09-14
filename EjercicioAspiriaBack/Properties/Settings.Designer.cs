@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Repositorios.Properties {
+namespace EjercicioAspiriaBack.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -20,6 +20,18 @@ namespace Repositorios.Properties {
         public static Settings Default {
             get {
                 return defaultInstance;
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Server=tcp:redsocialmexico.database.windows.net,1433;Initial Catalog=Aspiria;Pers" +
+            "ist Security Info=False;User ID=juanixx;Password=Thejuanix1;MultipleActiveResult" +
+            "Sets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;")]
+        public string AspiriaConnection {
+            get {
+                return ((string)(this["AspiriaConnection"]));
             }
         }
     }
